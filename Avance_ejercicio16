@@ -1,0 +1,55 @@
+print("\n***** Nombre 1: Uriel     Matrícula: T03094226 *****")
+print("*** Nombre 2: Camila Matrícula: T07013300 ***\n")
+
+print("*** Ejercicio 16 Reto: arma tu bubble tea (Versión personalizada) ***")
+
+# ===== DECISIÓN 1: EL TAMAÑO =====
+print("\n===== ELIGE TU TAMAÑO =====")
+print("1 = Chico ($55)   2 = Mediano ($70)   3 = Grande ($85)")
+tamano = int(input("Selecciona el número de tu tamaño: "))
+# Si el usuario escribe 2, ahora tamano vale 2
+
+# En cada opción guardamos el nombre y el precio del tamaño
+if tamano == 1:
+    nombre_tamano = "Chico"
+    precio_bebida = 55
+elif tamano == 2:
+    nombre_tamano = "Mediano"
+    precio_bebida = 70
+elif tamano == 3:
+    nombre_tamano = "Grande"
+    precio_bebida = 85
+else:
+    print("Opción no válida, por defecto te asignamos tamaño chico")
+    nombre_tamano = "Chico"
+    precio_bebida = 55
+
+# ===== DECISIÓN 2: EL TOPPING =====
+# Este es OTRO bloque, Python lo revisa aunque el anterior ya haya terminado
+print("\n===== ELIGE TU TOPPING FAVORITO =====")
+print("1 = Perlas de tapioca ($15)   2 = Jelly de frutas ($12)   3 = Sin topping ($0)")
+topping = int(input("Selecciona el número de tu topping: "))
+# Si el usuario escribe 1, ahora topping vale 1
+
+if topping == 1:
+    nombre_topping = "Perlas de tapioca"
+    precio_topping = 15
+elif topping == 2:
+    nombre_topping = "Jelly de frutas"
+    precio_topping = 12
+elif topping == 3:
+    nombre_topping = "Sin topping"
+    precio_topping = 0
+else:
+    print("Opción no válida, por defecto será sin topping")
+    nombre_topping = "Sin topping"
+    precio_topping = 0
+
+# ===== TOTAL =====
+# Sin sangría: se hace SIEMPRE.
+total = precio_bebida + precio_topping
+
+print("\n===== RESUMEN DE TU PEDIDO =====")
+print(f"Tamaño elegido: {nombre_tamano} - ${precio_bebida}")
+print(f"Topping añadido: {nombre_topping} - ${precio_topping}")
+print(f"TOTAL A PAGAR: ${total}")

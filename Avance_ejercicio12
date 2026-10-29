@@ -1,0 +1,26 @@
+print("\n***** Nombre 1: Uriel     Matrícula: T03094226 *****")
+print("*** Nombre 2: Camila Matrícula: T07013300 ***\n")
+
+print("*** Ejercicio 12 Playlist según tu mood (Versión personalizada) ***")
+
+# Mostramos el menú de opciones con un toque diferente
+print("\n===== ¿CÓMO TE SIENTES HOY? =====")
+print("1 = Súper Feliz")
+print("2 = Un poco Triste")
+print("3 = Con mucha Energía")
+print("4 = Concentrado Estudiando")
+
+# int() convierte el texto a número para compararlo con 1, 2, 3 y 4
+mood = int(input("\nEscribe el número de tu mood actual: "))
+
+# Python revisa en orden y se detiene en la primera que sea True
+if mood == 1:
+    print("¡Genial! Te recomiendo una playlist de upbeat pop y electrónica")
+elif mood == 2:
+    print("Te aconsejo escuchar una playlist de baladas acústicas y relax")
+elif mood == 3:
+    print("¡A darle con todo! Te sugiero una playlist de rock o phonk")
+elif mood == 4:
+    print("Excelente para la productividad: playlist de lofi-beats y sonidos binaurales")
+else:
+    print("Ups, ese número de mood no se encuentra registrado en el sistema")

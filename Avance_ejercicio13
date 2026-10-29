@@ -1,0 +1,36 @@
+print("\n***** Nombre 1: Uriel     Matrícula: T03094226 *****")
+print("*** Nombre 2: Camila Matrícula: T07013300 ***\n")
+
+print("*** Ejercicio 13 Mensaje según tu calificación (Versión personalizada) ***")
+
+# int() convierte el texto a número entero para poder comparar
+calificacion = int(input("\n¿Qué calificación obtuviste en el examen final? "))
+# Si el usuario escribe 85, ahora calificacion vale 85
+
+print("\n===== RESULTADO DE EVALUACIÓN =====")
+
+# PRIMERO revisamos que la calificación sea válida
+# ¿Es mayor que 100? False, pasa a la siguiente
+if calificacion > 100:
+    print("Calificación no válida, el puntaje máximo es 100")
+
+# ¿Es menor que 0? False, pasa a la siguiente
+elif calificacion < 0:
+    print("Calificación no válida, no puede ser menor a 0")
+
+# Si llegamos aquí, YA SABEMOS que la calificación es válida
+# ¿Es mayor o igual que 90? False, pasa a la siguiente
+elif calificacion >= 90:
+    print("¡Extraordinario! ¡Lo lograste con honores!")
+
+# ¿Es mayor o igual que 80? True, muestra el mensaje y TERMINA
+elif calificacion >= 80:
+    print("¡Muy buen trabajo, excelente desempeño!")
+
+# Ya sabemos que es menor que 80
+elif calificacion >= 70:
+    print("Aprobado con lo justo, a seguir esforzándose")
+
+# else: es menor que 70
+else:
+    print("No acreditado, toca repasar los temas y volver a intentar")

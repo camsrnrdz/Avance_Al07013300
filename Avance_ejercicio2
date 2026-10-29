@@ -1,0 +1,20 @@
+print("\n***** Nombre 1: Uriel    Matrícula: T03094226 *****")
+print("*** Nombre 2: Camila Matrícula: T07013300 ***\n")
+
+print("*** Ejercicio 2 CREA TU CUENTA ***\n")
+
+nombre = input("¿Cómo te llamas? ")
+edad = 18
+red_social = input("¿Cuál es tu red social favorita? ")
+
+print(nombre + ", tienes", edad, "años")
+
+if edad >= 13:
+    print("Tu cuenta en", red_social, "fue creada")
+else:
+    print("Todavía no puedes crear tu cuenta")
+
+if edad >= 18:
+    print("Compras dentro de la app activadas\n")
+else:
+    print("Compras dentro de la app desactivadas\n")

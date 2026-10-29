@@ -1,0 +1,28 @@
+print("\n***** Nombre 1: Uriel     Matrícula: T03094226 *****")
+print("*** Nombre 2: Camila Matrícula: T07013300 ***\n")
+
+print("*** Ejercicio 10 Nivel de influencer (Versión personalizada) ***")
+
+# input() guarda texto; el usuario es texto, así que no lo convertimos
+usuario = input("\nIngresa tu handle de usuario: @")
+# int() convierte a número entero para poder comparar
+seguidores = int(input("¿Cuántos seguidores forman tu comunidad? "))
+# Si el usuario escribe 25000, ahora seguidores vale 25000
+
+print(f"\n===== ESTADÍSTICAS PARA @{usuario} =====")
+
+# PREGUNTA 1: ¿Es menor que 1000?
+if seguidores < 1000:
+    print("Categoría: Creador Principiante")
+
+# PREGUNTA 2: si llegamos aquí, ya sabemos que tiene 1000 o más, ¿es menor que 10000?
+elif seguidores < 10000:
+    print("Categoría: Microinfluencer en crecimiento")
+
+# PREGUNTA 3: si llegamos aquí, ya sabemos que tiene 10000 o más, ¿es menor que 100000?
+elif seguidores < 100000:
+    print("Categoría: Influencer destacado")
+
+# else: si ninguna fue True, tiene 100000 o más
+else:
+    print("Categoría: Celebridad digital global")
